@@ -269,7 +269,7 @@
                         <input type="text" id="nombre">
                         <a id="enlace"
                             href="https://laura2444.github.io/Productivity_landing/assets/download/gumbal.jpg"
-                            download="gumbal">
+                            download="gumbal" style="display: none;">
                             <button id="descargar" disabled class="main-btn">Descargar</button>
                         </a>
                         <script>
@@ -280,7 +280,6 @@
                             input.addEventListener('input', () => {
                                 if (input.value.trim() !== "") {
                                     boton.disabled = false;
-                                    enlace.style.display = 'inline-block';
                                 } else {
                                     boton.disabled = true;
                                     enlace.style.display = 'none';
