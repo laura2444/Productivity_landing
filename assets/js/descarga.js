@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const downloadLink = document.getElementById('downloadLink');
     
     // URL de descarga (ajusta según tu necesidad)
-    const downloadUrl = 'https://laura2444.github.io/Productivity_landing/assets/download/gumbal.jpg';
+    const downloadUrl = 'https://laura2444.github.io/Productivity_landing/assets/download/app_debug.apk';
     
     demoForm.addEventListener('submit', function(e) {
         e.preventDefault();
