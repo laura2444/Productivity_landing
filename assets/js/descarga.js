@@ -59,13 +59,9 @@ document.addEventListener('DOMContentLoaded', function () {
             
             // Iniciar descarga automática del APK
             setTimeout(() => {
-                const tempLink = document.createElement('a');
-                tempLink.href = downloadUrl;
-                tempLink.download = 'app_debug.apk';
-                document.body.appendChild(tempLink);
-                tempLink.click();
-                document.body.removeChild(tempLink);
+                window.open(downloadUrl, '_blank');
             }, 500);
+
         })
         .catch(error => {
             console.error('Error:', error);
