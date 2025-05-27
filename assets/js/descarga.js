@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const downloadLink = document.getElementById('downloadLink');
     
     // URL directa al .apk en Google Drive
-    const downloadUrl = 'https://drive.google.com/uc?export=download&id=1jweK_zkowO6rK_Di0g8ugoVWlgSTycly';
+    const downloadUrl = 'https://drive.google.com/uc?export=download&id=1SM22tm4byIJJ7DMOfOnpKwmKYRAB6AQD';
     
     demoForm.addEventListener('submit', function (e) {
         e.preventDefault();
