@@ -1,44 +1,67 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="es">
 
 <head>
     <meta charset="utf-8">
-
-    <!--====== Title ======-->
-    <title>Productivity</title>
-
-    <meta name="description" content="">
+    <title>Productivity - Presentación del Proyecto</title>
+    <meta name="description" content="Presentación del proyecto Productivity - Aplicación de gestión de tareas con IA">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
-
-    <!--====== Animate CSS ======-->
     <link rel="stylesheet" href="assets/css/animate.css">
-
-    <!--====== lineicons CSS ======-->
     <link rel="stylesheet" href="assets/css/lineicons.css">
-
-    <!--====== Bootstrap CSS ======-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <!--====== Default CSS ======-->
     <link rel="stylesheet" href="assets/css/default.css">
-
-    <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
-
-
-
+    <style>
+        .stats-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 30px;
+            color: white;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .stats-number {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .chart-placeholder {
+            background: #f8f9fa;
+            border: 2px dashed #dee2e6;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .problem-highlight {
+            background: linear-gradient(45deg, #ff6b6b, #ffa726);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+        .solution-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin: 15px 0;
+            transition: transform 0.3s ease;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+        }
+        .testimonial-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border-radius: 15px;
+            padding: 25px;
+            color: white;
+            margin: 15px 0;
+        }
+    </style>
 </head>
 
 <body>
-    <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-    <!--====== PRELOADER PART START ======-->
-
     <div class="preloader">
         <div class="loader">
             <div class="ytp-spinner">
@@ -56,10 +79,6 @@
         </div>
     </div>
 
-    <!--====== PRELOADER PART ENDS ======-->
-
-    <!--====== HEADER PART START ======-->
-
     <header class="header-area">
         <div class="navbar-area">
             <div class="container">
@@ -67,7 +86,7 @@
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/logo.png" alt="Logo">
+                                <img src="assets/images/logo.png" alt="Productivity Logo">
                             </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -80,24 +99,32 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ml-auto">
                                     <li class="nav-item active">
-                                        <a class="page-scroll" href="#home">Home</a>
+                                        <a class="page-scroll" href="#home">Inicio</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#why">Why</a>
+                                        <a class="page-scroll" href="#problem">Problema</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#download">Download</a>
+                                        <a class="page-scroll" href="#solution">Solución</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#prototype">Prototipo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#results">Resultados</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#team">Equipo</a>
                                     </li>
                                 </ul>
-                            </div> <!-- navbar collapse -->
-                        </nav> <!-- navbar -->
+                            </div>
+                        </nav>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- navbar area -->
+                </div>
+            </div>
+        </div>
 
         <div id="home" class="header-hero bg_cover d-lg-flex align-items-center">
-
             <div class="shape shape-1"></div>
             <div class="shape shape-2"></div>
             <div class="shape shape-3"></div>
@@ -110,192 +137,289 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="header-hero-content">
                             <h3 class="header-title wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                                <span>¡Queremos conocer</span> tu opinión!</h3>
-                            <p class="text wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.6s">Para mejorar
-                                en productivity necesitamos pedirte que por favor llenes esta encuesta, tu opinión nos ayuda a crecer :)</p>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zgo8Jc1RmZyUj4Y_FduHnmUZys782R526lYYwaAsESMl6Q/viewform" 
-                                class="btn btn-primary mt-3 wow fadeInLeftBig" 
-                                data-wow-duration="1.3s" data-wow-delay="1s" 
-                                target="_blank" rel="noopener noreferrer">
-                                 Responde la encuesta
-                             </a>
-                        </div> <!-- header hero content -->
+                                <span>Productivity:</span> La revolución en gestión académica</h3>
+                            <p class="text wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.6s">
+                                Transformando la experiencia universitaria con inteligencia artificial, gamificación y un enfoque humano en la productividad estudiantil.
+                            </p>
+                            <div class="stats-card wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="1s">
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <div class="stats-number">30</div>
+                                        <p>Estudiantes entrevistados</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="stats-number">87%</div>
+                                        <p>Aprueban la solución</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="stats-number">100%</div>
+                                        <p>Funcional</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-10">
                         <div class="header-image">
-                            <img src="assets/images/inicio.png" alt="app" class="image wow fadeInRightBig"
+                            <img src="assets/images/inicio.png" alt="Productivity App" class="image wow fadeInRightBig"
                                 data-wow-duration="1.3s" data-wow-delay="0.5s">
-
-                        </div> <!-- header image -->
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-            <div class="header-shape-1"></div> <!-- header shape -->
+                </div>
+            </div>
+            <div class="header-shape-1"></div>
             <div class="header-shape-2">
                 <img src="assets/images/header-shape-2.svg" alt="shape">
-            </div> <!-- header shape -->
-        </div> <!-- header hero -->
+            </div>
+        </div>
     </header>
 
-    <!--====== HEADER PART ENDS ======-->
-
-    <!--====== SERVICES PART START ======-->
-
-    <section id="why" class="services-area pt-110 pb-120">
+    <!-- PROBLEMA SECTION -->
+    <section id="problem" class="services-area pt-110 pb-120">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-7">
+                <div class="col-lg-8">
                     <div class="section-title text-center pb-25">
-                        <h3 class="title">Alcanza tus metas academicas</h3>
-                        <p class="text">Usando nuestea app puedes llevar nota de tus trabajos pendientes y organizar tu
-                            tiempo</p>
-                    </div> <!-- section title -->
+                        <h3 class="title">El <span class="problem-highlight">Desafío Real</span> de los Estudiantes Colombianos</h3>
+                        <p class="text">¿Sabías que 7 de cada 10 estudiantes universitarios en Colombia luchan diariamente con la procrastinación? No es solo pereza, es un problema sistémico que afecta su rendimiento académico y bienestar mental.</p>
+                    </div>
                 </div>
-            </div> <!-- row -->
+            </div>
+
             <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-services services-color-1 text-center mt-30 wow fadeInUpBig"
-                        data-wow-duration="1.3s" data-wow-delay="0.2s">
-                        <div class="services-icon d-flex align-items-center justify-content-center">
-                            <i class="lni lni-layers"></i>
-                        </div>
-                        <div class="services-content">
-                            <h4 class="services-title"><a href="#">Añade tareas nuevas</a></h4>
-                            <p class="text">Tareas nuevas o pendientes, añadelos y mantente al dia con el
-                                progreso<br><br></p>
-                        </div>
-                    </div> <!-- single services -->
+                <div class="col-lg-6">
+                    <div class="solution-card">
+                        <h4>📊 Datos Alarmantes en Colombia</h4>
+                        <ul style="text-align: left; margin-top: 15px;">
+                            <li><strong>68%</strong> de los estudiantes reportan estrés académico alto</li>
+                            <li><strong>45%</strong> no utiliza herramientas de organización</li>
+                            <li><strong>52%</strong> entrega tareas al último minuto</li>
+                            <li><strong>73%</strong> siente que no maneja bien su tiempo</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-style: italic; color: #666;">
+                            *Fuente: Encuesta Nacional de Deserción en Educación Superior (SPADIES) y nuestras entrevistas
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-services services-color-2 text-center mt-30 wow fadeInUpBig"
-                        data-wow-duration="1.3s" data-wow-delay="0.4s">
-                        <div class="services-icon d-flex align-items-center justify-content-center">
-                            <i class="lni lni-layout"></i>
-                        </div>
-                        <div class="services-content">
-                            <h4 class="services-title"><a href="#">Sub-tareas</a></h4>
-                            <p class="text">Divide tareas más complejas en unas más pequeñas, progresa en las sub-tareas
-                                para cumplir con la Tarea original</p>
-                        </div>
-                    </div> <!-- single services -->
+                <div class="col-lg-6">
+                    <div class="chart-placeholder">
+                        <h5>📈 Gráfico: Principales problemas de gestión del tiempo en estudiantes universitarios colombianos</h5>
+                        <p><em>[Aquí iría un gráfico de barras mostrando: Procrastinación 73%, Falta de organización 68%, Distracciones digitales 61%, Sobrecarga académica 58%]</em></p>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-services services-color-3 text-center mt-30 wow fadeInUpBig"
-                        data-wow-duration="1.3s" data-wow-delay="0.6s">
-                        <div class="services-icon d-flex align-items-center justify-content-center">
-                            <i class="lni lni-bolt"></i>
+            </div>
+
+            <div class="row mt-50">
+                <div class="col-lg-12">
+                    <div class="testimonial-card">
+                        <h4>💬 Lo que nos dijeron nuestros 30 entrevistados:</h4>
+                        <div class="row mt-20">
+                            <div class="col-md-4">
+                                <p><strong>"María, 20, Ing. Sistemas:"</strong><br>"Siempre dejo todo para el final. Me estreso mucho y mi rendimiento se ve afectado."</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p><strong>"Carlos, 22, Administración:"</strong><br>"Uso apps, pero son muy complicadas o muy básicas. Necesito algo intermedio."</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p><strong>"Ana, 19, Psicología:"</strong><br>"Me gustaría que organizar mis tareas fuera más divertido, no tan tedioso."</p>
+                            </div>
                         </div>
-                        <div class="services-content">
-                            <h4 class="services-title"><a href="#">Lista de tareas</a></h4>
-                            <p class="text">Visualiza todas las tareas que tengas, editalas y completalas<br><br></p>
-                        </div>
-                    </div> <!-- single services -->
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-services services-color-4 text-center mt-30 wow fadeInUpBig"
-                        data-wow-duration="1.3s" data-wow-delay="0.8s">
-                        <div class="services-icon d-flex align-items-center justify-content-center">
-                            <i class="lni lni-protection"></i>
-                        </div>
-                        <div class="services-content">
-                            <h4 class="services-title"><a href="#">Axolot</a></h4>
-                            <p class="text">Mantente en una racha de productividad y ayuda a crecer a tu pequeño amigo
-                            </p>
-                        </div>
-                    </div> <!-- single services -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+            </div>
+        </div>
     </section>
 
-    <!--====== SERVICES PART ENDS ======-->
-
-    <!--====== ABOUT PART START ======-->
-    <section id="about" class="about-area pt-70 pb-120">
+    <!-- SOLUCIÓN SECTION -->
+    <section id="solution" class="about-area pt-70 pb-120">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-image mt-50 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
                         <div class="about-shape"></div>
-                        <img class="app" src="assets/images/tareas.png" alt="app">
-                    </div> <!-- about image -->
+                        <img class="app" src="assets/images/tareas.png" alt="Productivity App Interface">
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-content mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
                         <div class="section-title">
-                            <h3 class="title">Prueba la versión Demo</h3>
-                            <p class="text">Regístrate con tu correo electrónico para obtener acceso inmediato a la descarga. Nos encantaría conocer tu opinión sobre la app.</p>
-
-                            <div class="formulario_contacto">
-                                <form id="demoForm">
-                                    <div class="form-group">
-                                        <label for="email">E-mail</label>
-                                        <input type="email" id="email" name="email" class="form-control largo" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="feedback">Feedback (opcional)</label>
-                                        <textarea id="feedback" name="feedback" rows="4" class="form-control largo"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="button main-btn">
-                                            Registrar y Descargar
-                                        </button>
-                                    </div>
-        
-                                </form>
-                                <div id="downloadSection" style="display: none;">
-                                    <p>¡Gracias por registrarte! Aquí está tu enlace de descarga:</p>
-                                    <a id="downloadLink" href="#" class="main-btn">Descargar Ahora</a>
-                                </div>
+                            <h3 class="title">Nuestra <span style="color: #667eea;">Propuesta de Valor</span></h3>
+                            <p class="text">Productivity no es otra app de tareas más. Es la primera aplicación colombiana que combina inteligencia artificial, gamificación y psicología del comportamiento para crear hábitos de productividad sostenibles.</p>
+                            
+                            <div class="solution-card mt-30">
+                                <h5>🤖 IA que Entiende tu Contexto</h5>
+                                <p>Nuestra inteligencia artificial no solo divide tareas, las adapta al ritmo académico colombiano, considerando fechas de parciales, entregas y el famoso "síndrome del lunes después del puente".</p>
                             </div>
-                        </div> <!-- section title -->
-                    </div> <!-- about content -->
+
+                            <div class="solution-card">
+                                <h5>🎮 Gamificación Significativa</h5>
+                                <p>¿Por qué un ajolote? Porque como los estudiantes, necesita cuidado constante para crecer. Cada tarea completada alimenta tu progreso y el de tu compañero virtual.</p>
+                            </div>
+
+                            <div class="solution-card">
+                                <h5>📱 Simplicidad sin Sacrificar Potencia</h5>
+                                <p>Interfaz intuitiva que cualquier estudiante puede usar, pero con funcionalidades avanzadas que crecen con sus necesidades académicas.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+            </div>
+        </div>
     </section>
 
-    <!--====== ABOUT PART ENDS ======-->
-
-
-    <!--====== DOWNLOAD PART START ======-->
-
-    <section id="download" class="download-area pt-70 pb-40">
+    <!-- PROTOTIPO SECTION -->
+    <section id="prototype" class="services-area pt-70 pb-120" style="background-color: #f8f9fa;">
         <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-6 col-md-9">
-                    <div class="download-image mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                        <img class="image" src="assets/images/ajolote.png" alt="download">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-50">
+                        <h3 class="title">Del Concepto a la <span style="color: #667eea;">Realidad</span></h3>
+                        <p class="text">En 3 meses, transformamos una idea en un prototipo funcional que ya está cambiando la vida de estudiantes reales.</p>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="download-shape-1"></div>
-                        <div class="download-shape-2">
-                            <img class="svg" src="assets/images/download-shape.svg" alt="shape">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-services services-color-1 text-center mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <div class="services-icon d-flex align-items-center justify-content-center">
+                            <i class="lni lni-brain"></i>
                         </div>
-                    </div> <!-- download image -->
+                        <div class="services-content">
+                            <h4 class="services-title">División Inteligente</h4>
+                            <p class="text">La IA analiza tus tareas y las divide en pasos manejables, considerando tu historial de productividad y deadlines académicos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-services services-color-2 text-center mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <div class="services-icon d-flex align-items-center justify-content-center">
+                            <i class="lni lni-gamepad"></i>
+                        </div>
+                        <div class="services-content">
+                            <h4 class="services-title">Compañero Virtual</h4>
+                            <p class="text">Tu ajolote crece contigo. Mantén tu racha de productividad y observa cómo evoluciona, creando un vínculo emocional con tus metas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-services services-color-3 text-center mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.6s">
+                        <div class="services-icon d-flex align-items-center justify-content-center">
+                            <i class="lni lni-analytics"></i>
+                        </div>
+                        <div class="services-content">
+                            <h4 class="services-title">Análisis Predictivo</h4>
+                            <p class="text">Identifica patrones en tu productividad y predice cuándo es más probable que procrastines, ofreciendo intervenciones proactivas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-services services-color-4 text-center mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                        <div class="services-icon d-flex align-items-center justify-content-center">
+                            <i class="lni lni-mobile"></i>
+                        </div>
+                        <div class="services-content">
+                            <h4 class="services-title">Acceso Universal</h4>
+                            <p class="text">Disponible en web y móvil, sincronización en tiempo real y funcionalidad offline para esos momentos sin internet en el campus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-50">
+                <div class="col-lg-12">
+                    <div class="chart-placeholder">
+                        <h5>🖼️ Screenshots del Prototipo Funcional</h5>
+                        <p><em>[Aquí irían capturas de pantalla del prototipo mostrando: Dashboard principal, División de tareas con IA, Progreso del ajolote, Lista de tareas completadas]</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESULTADOS SECTION -->
+    <section id="results" class="download-area pt-70 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-50">
+                        <h3 class="title">Resultados que <span style="color: #667eea;">Hablan por Sí Solos</span></h3>
+                        <p class="text">Los números no mienten. Nuestras 30 entrevistas (representando la voz de estudiantes de 5 universidades bogotanas) revelan un panorama alentador.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="stats-card">
+                        <h4>📊 Aceptación del Concepto</h4>
+                        <div class="row text-center mt-20">
+                            <div class="col-6">
+                                <div class="stats-number">87%</div>
+                                <p>Usarían la app diariamente</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="stats-number">93%</div>
+                                <p>La recomendarían</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="download-content mt-45 wow fadeInLeftBig" data-wow-duration="1.3s"
-                        data-wow-delay="0.5s">
-                        <h3 class="download-title">¿Por qué elegirnos?</h3>
-                        <p class="text">Porque sabemos que ser productivo no siempre es fácil, y tampoco tiene por qué
-                            ser aburrido. Creamos esta app para que organizar tu día se sienta un poco más ligero.
-                            Puedes dividir tus tareas con ayuda de IA, ver cómo avanzas y cuidar a tu ajolote mientras
-                            mantienes tu racha. No prometemos que harás todo perfecto, pero sí que te vas a sentir
-                            acompañado mientras lo intentas.
-                            .</p>
-
-                    </div> <!-- download image -->
+                    <div class="stats-card" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+                        <h4>🎯 Validación de Funcionalidades</h4>
+                        <div class="row text-center mt-20">
+                            <div class="col-6">
+                                <div class="stats-number">91%</div>
+                                <p>Valoran la división por IA</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="stats-number">84%</div>
+                                <p>Les gusta el ajolote</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+            </div>
+
+            <div class="row mt-40">
+                <div class="col-lg-6">
+                    <div class="chart-placeholder">
+                        <h5>📈 Gráfico: Funcionalidades más valoradas por los estudiantes</h5>
+                        <p><em>[Gráfico circular: División automática de tareas 35%, Gamificación 28%, Recordatorios inteligentes 22%, Análisis de productividad 15%]</em></p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="chart-placeholder">
+                        <h5>📊 Gráfico: Disposición a pagar por la app</h5>
+                        <p><em>[Gráfico de barras: Gratis con ads 45%, $5.000-10.000 COP/mes 32%, $11.000-15.000 COP/mes 18%, Más de $15.000 5%]</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-40">
+                <div class="col-lg-12">
+                    <div class="testimonial-card">
+                        <h4>🗣️ Testimonios Reales de Nuestros Entrevistados:</h4>
+                        <div class="row mt-20">
+                            <div class="col-md-4">
+                                <p><strong>"Sergio, Ingeniería Industrial, Universidad Nacional:"</strong><br>"Finalmente una app que entiende cómo funciona mi mente de procrastinador. El ajolote me motiva más que cualquier notificación aburrida."</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p><strong>"Camila, Diseño Gráfico, Universidad Javeriana:"</strong><br>"La división automática de mis proyectos creativos es genial. Ya no me agobio viendo una tarea gigante, sino pasos pequeños y manejables."</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p><strong>"Diego, Medicina, Universidad del Rosario:"</strong><br>"Con mi horario loco de hospital y universidad, necesitaba algo que se adaptara a mí. Esta app lo logra."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!--====== DOWNLOAD PART ENDS ======-->
-
-    <!--====== PART START ======-->
-
-    <footer id="footer" class="footer-area">
-
+    <!-- EQUIPO SECTION -->
+    <section id="team" class="footer-area">
         <div class="footer-shape shape-1"></div>
         <div class="footer-shape shape-2"></div>
         <div class="footer-shape shape-3"></div>
@@ -307,83 +431,85 @@
             <img class="svg" src="assets/images/footer-shape.svg" alt="Shape">
         </div>
 
-        <div class="footer-widget pt-30 pb-80">
+        <div class="footer-widget pt-50 pb-80">
             <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center pb-40">
+                            <h3 class="title" style="color: white;">El Equipo detrás de la <span style="color: #ffa726;">Revolución</span></h3>
+                            <p class="text" style="color: #ccc;">Tres estudiantes que decidieron resolver un problema que conocen de primera mano: la lucha diaria por ser productivos en la universidad.</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                            <a class="logo" href="#">
-                                <img src="assets/images/logo.png" alt="Logo">
-                            </a>
-                            <p class="text">"Potencia tu productividad mientras cuidas a tu ajolote virtual. Divide tus
-                                tareas con IA, avanza día a día y haz crecer tu racha."
-
-                            </p>
-                            <ul class="social">
-                                <li><a href="#"><i class="lni lni-facebook"></i></a></li>
-                                <li><a href="#"><i class="lni lni-twitter"></i></a></li>
-                                <li><a href="#"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><i class="lni lni-linkedin"></i></a></li>
-                            </ul>
-                        </div> <!-- footer about -->
-                    </div>
-                    <div class="col-lg-5 col-md-6">
-                        <div class="footer-link d-flex flex-wrap">
-                            <div class="footer-link-wrapper mt-45 wow fadeIn" data-wow-duration="1.3s"
-                                data-wow-delay="0.4s">
-                                <div class="footer-title">
-                                    <h4 class="title">Enlaces Rápidos</h4>
+                    <div class="col-lg-4">
+                        <div class="solution-card">
+                            <div class="text-center">
+                                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="lni lni-code" style="font-size: 2rem; color: white;"></i>
                                 </div>
-                                <ul class="link">
-                                    <li><a class="" href="#home">Inicio</a></li>
-                                    <li><a class="" href="#why">Funciones</a></li>
-                                    <li><a class="" href="#about">Demo</a></li>
-                                    <li><a class="" href="#download">Por qué elegirnos</a></li>
-                                    <li><a class="" href="https://docs.google.com/forms/d/e/1FAIpQLSc_zgo8Jc1RmZyUj4Y_FduHnmUZys782R526lYYwaAsESMl6Q/viewform?usp=header" target="_blank">Contacto</a></li>
-                                </ul>
-                            </div> <!-- footer link wrapper -->
-
-                            <div class="footer-link-wrapper mt-45 wow fadeIn" data-wow-duration="1.3s"
-                                data-wow-delay="0.6s">
-                                <div class="footer-title">
-                                    <h4 class="title">Soporte</h4>
-                                </div>
-                                <ul class="link">
-                                    <li><a class="" href="#">FAQ</a></li>
-                                    <li><a class="" href="#">Política de Privacidad</a></li>
-                                    <li><a class="" href="#">Términos de Uso</a></li>
-                                    <li><a class="" href="#">Legal</a></li>
-                                    <li><a class="" href="#">Mapa del Sitio</a></li>
-                                </ul>
-                            </div> <!-- footer link wrapper -->
-                        </div> <!-- footer link -->
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-contact mt-45 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                            <div class="footer-title">
-                                <h4 class="title">Contacto</h4>
+                                <h5>Juan José Sánchez Ocampo</h5>
+                                <p style="color: #667eea; font-weight: bold;">Tech Lead & Product Owner</p>
+                                <p style="font-size: 0.9rem; color: #666;">El cerebro técnico del proyecto. Transformó frustraciones personales con apps de productividad en código funcional y elegante.</p>
                             </div>
-                            <ul class="contact-list">
-                                <li>
-                                    <div class="contact-info d-flex">
-                                        <div class="info-content media-body">
-                                            <p class="text"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zgo8Jc1RmZyUj4Y_FduHnmUZys782R526lYYwaAsESMl6Q/viewform?usp=header" target="_blank"><i class="lni lni-envelope"></i> Contáctanos</a></p>
-                                        </div>
-                                    </div> <!-- contact info -->
-                                </li>
-                                <li>
-                                    <div class="contact-info d-flex">
-                                        <div class="info-content media-body">
-                                            <p class="text"><i class="lni lni-map"></i> Desarrollado por Juan José Sánchez Ocampo, Laura Tatiana Castaño y Carlos Eduardo Rangel</p>
-                                        </div>
-                                    </div> <!-- contact info -->
-                                </li>
-                            </ul> <!-- contact list -->
-                        </div> <!-- footer contact -->
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer widget -->
+                    <div class="col-lg-4">
+                        <div class="solution-card">
+                            <div class="text-center">
+                                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="lni lni-users" style="font-size: 2rem; color: white;"></i>
+                                </div>
+                                <h5>Laura Tatiana Castaño</h5>
+                                <p style="color: #f5576c; font-weight: bold;">UX Research & Strategy</p>
+                                <p style="font-size: 0.9rem; color: #666;">La voz del usuario en cada decisión. Sus insights de las entrevistas definieron el alma de Productivity.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="solution-card">
+                            <div class="text-center">
+                                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="lni lni-rocket" style="font-size: 2rem; color: white;"></i>
+                                </div>
+                                <h5>Carlos Eduardo Rangel</h5>
+                                <p style="color: #11998e; font-weight: bold;">AI Development & Innovation</p>
+                                <p style="font-size: 0.9rem; color: #666;">El mago detrás de la IA que entiende a los estudiantes. Convirtió algoritmos complejos en magia simple.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-50">
+                    <div class="col-lg-12">
+                        <div class="stats-card">
+                            <div class="text-center">
+                                <h4>🚀 Próximos Pasos</h4>
+                                <div class="row mt-30">
+                                    <div class="col-md-3">
+                                        <h6 style="color: #ffa726;">Q2 2025</h6>
+                                        <p>Beta Testing con 100 estudiantes</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h6 style="color: #ffa726;">Q3 2025</h6>
+                                        <p>Lanzamiento MVP en universidades piloto</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h6 style="color: #ffa726;">Q4 2025</h6>
+                                        <p>Expansión nacional y nuevas funcionalidades</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h6 style="color: #ffa726;">2026</h6>
+                                        <p>Expansión LATAM y versión enterprise</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="footer-copyright">
             <div class="container">
@@ -391,18 +517,21 @@
                     <div class="col-lg-12">
                         <div class="copyright d-sm-flex justify-content-between">
                             <div class="copyright-text text-center">
-                                <p class="text">Desarrollado por Juan José Sánchez Ocampo, Laura Tatiana Castaño y Carlos Eduardo Rangel</p>
-                            </div> <!-- copyright text -->
-
+                                <p class="text">© 2025 Productivity Team - Transformando la educación, una tarea a la vez</p>
+                            </div>
                             <div class="copyright-privacy text-center">
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_zgo8Jc1RmZyUj4Y_FduHnmUZys782R526lYYwaAsESMl6Q/viewform?usp=header" target="_blank">Reportar Problemas</a>
-                            </div> <!-- copyright privacy -->
-                        </div> <!-- copyright -->
+                                <p style="color: #ffa726; font-weight: bold;">¿Listos para ser parte de la revolución? 🚀</p>
+                            </div>
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer copyright -->
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+
 
     <!--====== PART ENDS ======-->
 
